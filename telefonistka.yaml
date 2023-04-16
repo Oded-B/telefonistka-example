@@ -32,7 +32,7 @@ promotionPaths:
       - targetPaths:
         - "clusters/prod/us-east4/c2/"
 dryRunMode: false
-autoApprovePromotionPrs: false
+autoApprovePromotionPrs: true
 toggleCommitStatus:
   override-terrafrom-pipeline: "github-action-terraform"
 
