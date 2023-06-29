@@ -39,8 +39,8 @@ toggleCommitStatus:
 webhookEndpointRegexs:
   - expression: "^workspace/[^/]*/.*"
     replacements:
-      - "kube-argocd-c1.service.lab.example.com"
-      - "kube-argocd-applicationset-c1.service.lab.example.com"
+      - "https://kube-argocd-c1.service.lab.example.com"
+      - "https://kube-argocd-applicationset-c1.service.lab.example.com"
   - expression: "^clusters/([^/]*)/([^/]*)/([^/]*)/.*"
     replacements:
       - "https://kube-argocd-${3}.${1}.service.{2}.example.com"
