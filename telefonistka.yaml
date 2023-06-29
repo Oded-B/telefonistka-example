@@ -37,11 +37,11 @@ toggleCommitStatus:
   override-terrafrom-pipeline: "github-action-terraform"
 
 webhookEndpointRegexs:
-  - expression: "^workspace\/[^/]*\/.*"
+  - expression: "^workspace/[^/]*/.*"
     replacements:
       - "kube-argocd-c1.service.lab.example.com"
       - "kube-argocd-applicationset-c1.service.lab.example.com"
-  - expression: "^clusters\/([^/]*)\/([^/]*)\/([^/]*)\/.*"
+  - expression: "^clusters/([^/]*)/([^/]*)/([^/]*)/.*"
     replacements:
       - "https://kube-argocd-${3}.${1}.service.{2}.example.com"
       - "https://kube-argocd-applicationset-${2}.service.${1}.example.com"
